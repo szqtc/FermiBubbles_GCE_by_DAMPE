@@ -7,15 +7,16 @@ README
 
 
 ### Introduction
-The DArk Matter Particle Explorer (DAMPE) is a space-borne high-energy particle detector that surveys the gamma-ray sky above 2 GeV with a peak acceptance of ~0.2 m$^2$ sr.
+The DArk Matter Particle Explorer (DAMPE) is a space-borne high-energy particle detector that surveys the gamma-ray sky above 2 GeV with a peak acceptance of ~0.2 m^2 sr.
 
 Using 102-month (8.5-yr) photon data, DAMPE has significantly detected the *Fermi* bubbles (~26 sigma significance) and the Galactic center excess (~7 sigma significance).
 Details can be found in [arXiv:2512.23458](https://arxiv.org/abs/2512.23458).
 
 
 ### Fermi bubbles templates
-Here are the *Fermi* bubbles templates, in FITS format, supplementary to that paper.
+Here are the *Fermi* bubbles templates, in FITS format, supplementary to the paper (arXiv:2512.23458).
 Two projections of the templates are provided: the plate carree (CAR) projection and the all-sky HEALPix projection.
+Please note that the values within the boundary of the *Fermi* bubbles are 1.0 (see the preview below).
 
 - **FBs_baseline_total_(proj).fits**  
 The *Fermi* bubbles template directly extracted from the DAMPE residual map.
@@ -27,6 +28,8 @@ The two maps correspond to two extrapolation methods.
 Please see Section 4.3 of [arXiv:2512.23458](https://arxiv.org/abs/2512.23458) for details.
 
 ![](preview_bubbles.png)
+
+The FITS files can be visualized with [SAOImageDS9](https://sites.google.com/cfa.harvard.edu/saoimageds9/download), read and manipulated with [astropy](https://www.astropy.org/), and utilized by the data analysis tools (e.g. [fermitools](https://fermi.gsfc.nasa.gov/ssc/data/analysis/software/) and [DmpST](https://dampe.nssdc.ac.cn/dampe/mission.php)).
 
 
 ### Citation
